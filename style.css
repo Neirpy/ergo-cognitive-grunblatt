@@ -1,0 +1,270 @@
+html{
+  margin: 0;
+  padding: 0;
+  font-family: 'Cardo', sans-serif;
+  background-color: #14100F;
+  color: #fff;
+}
+
+body{
+  width: 80%;
+  margin: 0 auto;
+}
+
+h1{
+  font-size: 3vmax;
+}
+
+nav{
+  color: #fff;
+  text-align: center;
+}
+
+nav ul {
+  font-size: 1.5vmax;
+  display: flex;
+  align-items: center;
+  margin-block-start: 0;
+  padding-inline-start: 0;
+  margin-bottom: 0;
+}
+
+nav ul li {
+  list-style: none;
+  margin-right: 2%;
+  background-color: #F19B00;
+}
+
+nav ul li a{
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: #F19B00;
+  border-top-right-radius: 2%;
+  border-top-left-radius: 2%;
+  transition: 0.5s color, 0.5s background-color;
+}
+
+nav ul li {
+  border-top-right-radius: 2%;
+  border-top-left-radius: 2%;
+  transition: 0.5s color, 0.5s background-color;
+}
+
+nav ul li:hover a, nav ul li:hover{
+  color: #14100F;
+  background-color: #fff;
+  transition: 0.5s color, 0.5s background-color;
+}
+
+.active{
+  color: #14100F;
+  background-color: #fff;
+}
+
+
+main{
+  margin: 0 auto;
+  background-color: #E4E6DB;
+  border-top-right-radius: 2%;
+  color: #14100F;
+  padding: 2%;
+}
+
+main hr{
+  border: #14100F 1px solid;
+  width: 100%;
+}
+
+#home section {
+  display: flex;
+  margin-bottom: 2%;
+}
+
+#imgAuthor{
+  width: auto;
+  border-radius: 2%;
+}
+
+.leftImg{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.rightPart {
+  width: 100%;
+
+}
+
+.text, .review{
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  margin-left: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 2%;
+  background-color: #FDF0D9;
+}
+
+.text img{
+  width: 25%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+}
+
+sub{
+  text-align: center;
+  font-style: italic;
+  margin-top: 1%;
+}
+
+.review{
+  margin-top: 2%;
+}
+
+.slider{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  border-radius: 10px;
+  align-items: center;
+  height: 200px;
+}
+
+.slidePart{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.slide {
+  width: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
+  opacity: 0;
+  display: none;
+  text-align: center;
+  border-radius: 10px;
+  transition: opacity 0.5s;
+}
+
+#slideCounter{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+}
+
+
+.slideButton{
+  width: 5%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border: #F19B00 2px solid;
+  background-color: transparent;
+  justify-content: center;
+  font-size: 0.8vmax;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.activeBtn, .slideButton:hover {
+    background-color: #4d423c;
+    color: #F19B00;
+}
+
+.activeSlide{
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.next, .prev{
+  width: 5%;
+  height: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2vmax;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.next{
+  padding-left: 2%;
+}
+
+.prev{
+  padding-right: 2%;
+}
+
+#home section .text a{
+  color: #F19B00;
+  transition: color 0.5s;
+}
+
+#home section .text a:hover{
+  color: #4d423c;
+  transition: color 0.5s;
+}
+
+footer{
+  padding: 10px;
+  text-align: center;
+  background-color: #E4E6DB;
+  color: #14100F;
+  margin-top: 1%;
+}
+
+footer hr{
+  width: 50%;
+  border: #14100F 1px solid;
+}
+
+footer h3{
+  text-align: left;
+  padding-left: 10px;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-inline-start: 0;
+}
+
+footer ul li {
+  list-style: none;
+}
+
+/*fais moi un style pour le a */
+footer ul li a {
+  border: 2px solid #F19B00;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #14100F;
+  display: block;
+  padding: 7px;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s color, 0.5s background-color;
+}
+
+footer ul li a:hover {
+  background-color: #F19B00;
+  color: #fff;
+  transition: 0.5s color, 0.5s background-color;
+}
