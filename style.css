@@ -1,9 +1,19 @@
+/*fais moi un root avec les couleurs de hunger games */
+:root{
+  --main-color: #D19358;
+  --secondary-color: #F19B00;
+  --black-color: #241103;
+  --white-color: #FFFBFF;
+  --lightgray-color: #FDF0D9;
+  --gray-color: #d7ccca;
+}
+
 html{
   margin: 0;
   padding: 0;
   font-family: 'Cardo', sans-serif;
-  background-color: #14100F;
-  color: #fff;
+  background: url('./public/img/background.jpg') no-repeat;
+  color: var(--white-color);
 }
 
 body{
@@ -16,7 +26,7 @@ h1{
 }
 
 nav{
-  color: #fff;
+  color: var(--white-color);
   text-align: center;
 }
 
@@ -32,18 +42,18 @@ nav ul {
 nav ul li {
   list-style: none;
   margin-right: 2%;
-  background-color: #F19B00;
+  background-color: var(--main-color);
 }
 
 nav ul li a{
   display: block;
   padding: 10px;
   text-decoration: none;
-  color: #fff;
+  color: var(--white-color);
   width: 100%;
   height: 100%;
   text-align: center;
-  background-color: #F19B00;
+  background-color: var(--main-color);
   border-top-right-radius: 2%;
   border-top-left-radius: 2%;
   transition: 0.5s color, 0.5s background-color;
@@ -56,27 +66,27 @@ nav ul li {
 }
 
 nav ul li:hover a, nav ul li:hover{
-  color: #14100F;
-  background-color: #fff;
+  color: var(--white-color);
+  background-color: var(--secondary-color);
   transition: 0.5s color, 0.5s background-color;
 }
 
 .active{
-  color: #14100F;
-  background-color: #fff;
+  color: var(--white-color);
+  background-color: var(--secondary-color);
 }
 
 
 main{
   margin: 0 auto;
-  background-color: #E4E6DB;
+  background-color: var(--gray-color);
   border-top-right-radius: 2%;
-  color: #14100F;
+  color: var(--black-color);
   padding: 2%;
 }
 
 main hr{
-  border: #14100F 1px solid;
+  border: var(--black-color) 1px solid;
   width: 100%;
 }
 
@@ -90,10 +100,61 @@ main hr{
   border-radius: 2%;
 }
 
+.leftPart{
+  width: 80%;
+  display: flex;
+  margin-right: 2%;
+  flex-direction: column;
+}
+
 .leftImg{
   display: flex;
   flex-direction: column;
+}
 
+details{
+  width: 100%;
+  margin-top: 2%;
+  border-radius: 10px;
+  background-color: var(--white-color);
+}
+
+details ul{
+  width: 90%;
+}
+
+details ul li p{
+  width: 100%;
+  padding: 2%;
+  font-style: italic;
+}
+
+details ul li a{
+  color: var(--secondary-color);
+  font-size: 1vmax;
+  transition: color 0.5s;
+}
+
+details ul li a:hover{
+  color: var(--main-color);
+  transition: color 0.5s;
+}
+
+summary{
+  cursor: pointer;
+  font-size: 1.2vmax;
+  background-color: var(--main-color);
+  color: var(--white-color);
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 2%;
+  transition: 0.5s color, 0.5s background-color;
+}
+
+summary:hover{
+  color: var(--main-color);
+  background-color: var(--white-color);
+  transition: 0.5s color, 0.5s background-color;
 }
 
 .rightPart {
@@ -102,14 +163,26 @@ main hr{
 }
 
 .text, .review{
-  display: flex;
-  flex-direction: column;
   border-radius: 10px;
   margin-left: 1%;
+  padding: 2%;
+  background-color: var(--white-color);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.text div{
+  display: flex;
   padding-left: 2%;
   padding-right: 2%;
   padding-bottom: 2%;
-  background-color: #FDF0D9;
+  flex-direction: column;
+  border-radius: 2%;
+}
+
+.review div{
+  background-color: var(--white-color);
+  padding: 2%;
+  border-radius: 2%;
 }
 
 .text img{
@@ -128,6 +201,10 @@ sub{
 
 .review{
   margin-top: 2%;
+}
+
+.review hr:last-of-type{
+  width: 50%;
 }
 
 .slider{
@@ -161,11 +238,13 @@ sub{
 
 #slideCounter{
   display: flex;
-  width: 100%;
+  width: 90%;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin-top: 2%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -174,7 +253,7 @@ sub{
   height: 100%;
   display: flex;
   align-items: center;
-  border: #F19B00 2px solid;
+  border: var(--main-color) 2px solid;
   background-color: transparent;
   justify-content: center;
   font-size: 0.8vmax;
@@ -183,8 +262,8 @@ sub{
 }
 
 .activeBtn, .slideButton:hover {
-    background-color: #4d423c;
-    color: #F19B00;
+    background-color: var(--main-color);
+    color: var(--white-color);
 }
 
 .activeSlide{
@@ -212,26 +291,26 @@ sub{
 }
 
 #home section .text a{
-  color: #F19B00;
+  color: var(--secondary-color);
   transition: color 0.5s;
 }
 
 #home section .text a:hover{
-  color: #4d423c;
+  color: var(--main-color);
   transition: color 0.5s;
 }
 
 footer{
   padding: 10px;
   text-align: center;
-  background-color: #E4E6DB;
-  color: #14100F;
+  background-color: var(--gray-color);
+  color: var(--black-color);
   margin-top: 1%;
 }
 
 footer hr{
   width: 50%;
-  border: #14100F 1px solid;
+  border: var(--black-color) 1px solid;
 }
 
 footer h3{
@@ -252,10 +331,10 @@ footer ul li {
 
 /*fais moi un style pour le a */
 footer ul li a {
-  border: 2px solid #F19B00;
+  border: 2px solid var(--main-color);
   border-radius: 10px;
   text-decoration: none;
-  color: #14100F;
+  color: var(--black-color);
   display: block;
   padding: 7px;
   width: 100%;
@@ -264,7 +343,7 @@ footer ul li a {
 }
 
 footer ul li a:hover {
-  background-color: #F19B00;
-  color: #fff;
+  background-color: var(--main-color);
+  color: var(--white-color);
   transition: 0.5s color, 0.5s background-color;
 }
