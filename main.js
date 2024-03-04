@@ -32,26 +32,36 @@ function generateSlideCounter() {
 function hideAllSlides() {
     for (let slide of slides) {
         slide.classList.remove('activeSlide');
-        slide.classList.remove('slideRight');
-        slide.classList.remove('slideLeft');
+        slide.classList.remove('slide-left');
         slide.style.display = 'none';
     }
 }
 
-function showSlide(direction) {
+function showSlide() {
     hideAllSlides();
+    // met un condition si l'ecran est en portrait affiche qu'un seul slide
+    if (window.matchMedia("(orientation: portrait)").matches) {
+        slides[slideIndex].classList.add('activeSlide');
+        slides[slideIndex].style.display = 'flex';
+        const selectList = document.querySelector('.slideSelectList');
+        selectList.value = slideIndex;
+        updateSlideCounter();
+        return;
+    }
     slides[slideIndex].classList.add('activeSlide');
-    if (direction === 'right') {
-        slides[slideIndex].classList.add('nextSlide');
-    }
-    if (direction === 'left') {
-        slides[slideIndex].classList.add('prevSlide');
-    }
+    slides[slideIndex].classList.add('flip');
+    slides[(slideIndex + 1) % slides.length].classList.add('activeSlide');
+    slides[(slideIndex + 2) % slides.length].classList.add('activeSlide');
     slides[slideIndex].style.display = 'flex';
+    slides[(slideIndex + 1) % slides.length].style.display = 'flex';
+    slides[(slideIndex + 2) % slides.length].style.display = 'flex';
+
+    // Set the value of selectList to slideIndex
     const selectList = document.querySelector('.slideSelectList');
-    selectList.value = slideIndex; // Set the value of selectList to slideIndex
+    selectList.value = slideIndex;
     updateSlideCounter();
 }
+
 
 function updateSlideCounter() {
     const buttons = slideCounter.querySelectorAll('button');
@@ -67,16 +77,16 @@ function updateSlideCounter() {
 function nextSlide() {
     slideIndex++;
     if (slideIndex >= slides.length) slideIndex = 0;
-    showSlide('right');
+    showSlide();
 }
 
 function prevSlide() {
     slideIndex--;
     if (slideIndex < 0) slideIndex = slides.length - 1;
-    showSlide('left');
+    showSlide();
 }
 
-slideInterval = setInterval(nextSlide, 3000);
+
 
 document.querySelector('.next').addEventListener('click', nextSlide);
 document.querySelector('.prev').addEventListener('click', prevSlide);

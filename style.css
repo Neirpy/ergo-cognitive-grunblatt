@@ -190,15 +190,6 @@ sub{
   margin-top: 2%;
 }
 
-
-
-.review div{
-  border-radius: 2%;
-  background-color: var(--black-color);
-  color: var(--white-color);
-  padding: 2%;
-}
-
 .review hr:last-of-type{
   width: 50%;
   margin-left: auto;
@@ -206,34 +197,35 @@ sub{
 }
 
 .slider{
-  width: 90%;
+  width: 100%;
+  height: 40vh;
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
   border-radius: 10px;
   align-items: center;
-  height: 200px;
 }
 
-.slidePart{
+.slidePart {
   width: 100%;
-  height: 100%;
   display: flex;
+  justify-content: center;
+  gap: 2%;
+  overflow: hidden;
   align-items: center;
   border-radius: 10px;
 }
 
 .slide {
-  width: 100%;
-  margin-left: 5%;
-  margin-right: 5%;
-  display: none;
-  text-align: center;
-  border-radius: 10px;
+  width: 30%;
+  height: 30vh;
+  padding: 2%;
+  background-color: var(--black-color);
+  color: var(--white-color);
 }
 
 .activeSlide {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -255,7 +247,6 @@ sub{
   border: var(--main-color) 2px solid;
   background-color: transparent;
   justify-content: center;
-  font-size: 1vmax;
   border-radius: 10px;
   color: var(--main-color);
   cursor: pointer;
@@ -430,13 +421,25 @@ footer ul li a:hover {
     align-items: center;
   }
 
+  section{
+    padding:2%;
+  }
+
+  #welcomeText{
+    flex-direction: column;
+  }
+
   #selectedWorks{
     font-size: 2vmax;
     background-color: var(--main-color);
   }
 
   #selectedWorks option, #selectedWorks optgroup{
-    font-size: 1.2vmax;
+    font-size: 1.5vmax;
+  }
+
+  .slide{
+    width: 100%;
   }
 
   .burger {
