@@ -47,7 +47,7 @@ function showSlide(direction) {
     if (direction === 'left') {
         slides[slideIndex].classList.add('prevSlide');
     }
-    slides[slideIndex].style.display = 'block';
+    slides[slideIndex].style.display = 'flex';
     const selectList = document.querySelector('.slideSelectList');
     selectList.value = slideIndex; // Set the value of selectList to slideIndex
     updateSlideCounter();
@@ -83,3 +83,34 @@ document.querySelector('.prev').addEventListener('click', prevSlide);
 
 generateSlideCounter();
 showSlide();
+
+/**
+ * partie menu burger
+ */
+
+// Ajoutez ce code dans votre fichier JavaScript
+
+const navSlide = () => {
+  const burger = document.querySelector('.burger');
+  const nav = document.querySelector('header nav');
+  const navLinks = document.querySelectorAll('header nav ul li');
+
+  burger.addEventListener('click', () => {
+    // bascule Nav
+    nav.classList.toggle('nav-active');
+
+    // Animation des liens
+    navLinks.forEach((link, index) => {
+      if (link.style.animation) {
+        link.style.animation = '';
+      } else {
+        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
+      }
+    });
+
+    // Animation du burger
+    burger.classList.toggle('toggle');
+  });
+}
+
+navSlide();
