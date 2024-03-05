@@ -224,6 +224,7 @@ sub{
   width: 30%;
   height: 30vh;
   padding: 2%;
+  font-size: 1vmax;
   background-color: var(--black-color);
   color: var(--white-color);
 }
