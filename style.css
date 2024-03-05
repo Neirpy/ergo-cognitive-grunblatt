@@ -380,8 +380,9 @@ footer ul li a:hover {
 
 /* Style pour le menu de navigation en mode portrait */
 @media screen and (orientation: portrait) {
-  body{
+  body,html{
     overflow-x: hidden;
+    width:100vw;
   }
   header {
     justify-content: space-between;
