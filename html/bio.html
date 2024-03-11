@@ -9,20 +9,121 @@
     <script type="module" src="../main.js"></script>
 </head>
 <body>
-<header id="header">
-    <h1>Suzanne Collins</h1>
-    <nav>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="works.html">Works</a></li>
-            <li class="active"><a class="active"  href="bio.html">Biography</a></li>
-            <li><a href="events.html">Interview</a></li>
-        </ul>
-    </nav>
+<header>
+  <div>
+    <img src="../logo-hunger-games.png" alt="Logo hunger games header">
+    <h1><a href="../index.html">Suzanne Collins</a></h1>
+  </div>
+  <div class="burger">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <nav>
+    <ul>
+      <li class="active"><a href="../index.html">Home</a></li>
+      <li id="selectedWorksNav">
+        <label>
+          <select
+                  onchange="window.location=this.value"
+                  id="selectedWorks"
+          >
+            <option value="/html/works.html" id="firtSelectNav" hidden>My books</option>
+            <optgroup label="PICTURE BOOK">
+              <option value="/html/year_of_the_jungle.html">Year of the Jungle</option>
+              <option value="/html/when_charlie_mcbutton.html">WHEN CHARLIE MCBUTTON LOST POWER</option>
+            </optgroup>
+            <optgroup label="SCI-FI">
+              <option value="/html/mockingjay.html">Mockingjay</option>
+              <option value="/html/catching_fire.html">Catching Fire</option>
+              <option value="/html/the_hunger_games.html">The Hunger Games</option>
+            </optgroup>
+            <optgroup label="FANTASY">
+              <option value="/html/gregor_the_overlander.html">Gregor the Overlander</option>
+              <option value="/html/gregor_and_the_prophecy_of_bane.html">Gregor and the Prophecy of Bane</option>
+              <option value="/html/gregor_and_the_curse_of_the_warmbloods.html">Gregor and the Curse of the Warmbloods</option>
+              <option value="/html/gregor_and_the_marks_of_secret.html">Gregor and the Marks of Secret</option>
+              <option value="/html/gregor_and_the_code_of_claw.html">Gregor and the Code of Claw</option>
+            </optgroup>
+            <optgroup label="ALL">
+              <option value="/html/works.html">View all</option>
+            </optgroup>
+          </select>
+        </label>
+      </li>
+      <li><a class="active" href="/html/bio.html">Biography</a></li>
+      <li><a href="/html/events.html">Interview</a></li>
+    </ul>
+  </nav>
 </header>
 
 <main>
-    <h2>Biography</h2>
+    <article id="bio">
+        <h2>Biography</h2>
+        <hr>
+        <section>
+            <img src="../img/suzannecollins-2020-photocredittoddplitt.jpg" alt="image of Suzanne Collins">
+            <div class="text">
+                <h3>Suzanne Collins</h3>
+                <hr>
+                <p>
+                    In 1991, Suzanne Collins began her professional career writing for children's television.
+                    She worked on the staffs of several Nickelodeon shows, including the Emmy-nominated hit Clarissa Explains
+                    it All and The Mystery Files of Shelby Woo. For preschool viewers, she penned multiple stories for the Emmy-nominated Little Bear and Oswald.
+                    She also co-wrote the Rankin/Bass Christmas special, Santa, Baby! with her friend, Peter Bakalian, which was nominated for a WGA Award in Animation.
+                    Most recently she was the Head Writer for Scholastic Entertainment's Clifford's Puppy Days,and a freelancer on Wow! Wow! Wubbzy!
+                    While working on a Kids WB show called Generation O! she met children's author and illustrator James Proimos,
+                    who talked her into giving children's books a try.
+                </p>
+                <h3>First idea</h3>
+                <hr>
+                <p>
+                    Thinking one day about Alice in Wonderland, she was struck by how pastoral the setting must seem to kids who,
+                    like her own, lived in urban surroundings. In New York City, you're much more likely to fall down a manhole than a rabbit hole and,
+                    if you do, you're not going to find a tea party. What you might find...? Well, that's the story of Gregor the Overlander,
+                    the first book in her five-part series, The Underland Chronicles. Suzanne also has a rhyming picture book illustrated by Mike Lester entitled When Charlie McButton Lost Power.
+                </p>
+                <h3>Success</h3>
+                <hr>
+                <p>
+                    Her next series, The Hunger Games Trilogy, is an international bestseller.
+                    The Hunger Games has spent over six years to date on The New York Times bestseller list since publication in September 2008,
+                    and has also appeared consistently on USA Today and Publishers Weekly bestseller lists. It has been sold into 54 territories in 52 languages.
+                    In 2010 Suzanne was named to the TIME 100 list as well as the Entertainment Weekly Entertainers of the Year list.
+                    In 2016, she was presented the 2016 Authors Guild Award for Distinguished Service to the Literary Community for exemplifying the unique power of
+                    young people's literature to change lives and create lifelong book lovers.
+                    It was the first time the Guild presented the award to a YA author.
+                </p>
+                <h3>Adaptation</h3>
+                <hr>
+                <p>
+                    Lionsgate released a film adaptation of THE HUNGER GAMES on March 23, 2012, directed by Gary Ross who also shared screenplay credit with Suzanne and Billy Ray.
+                    It broke multiple box office records and went on to become the 14th highest-grossing North American release of all time on its way to generating nearly $700 million
+                    at the worldwide box office. Lionsgate released the second installment THE HUNGER GAMES: CATCHING FIRE worldwide on November 22, 2013, directed by Francis Lawrence
+                    from a screenplay by Simon Beaufoy and Michael DeBruyn and bringing back stars Jennifer Lawrence, Josh Hutcherson, Liam Hemsworth, Woody Harrelson, Elizabeth Banks,
+                    Willow Shields, Paula Malcomson, Donald Sutherland, Stanley Tucci and Lenny Kravitz along with new cast members Philip Seymour Hoffman, Sam Claflin,
+                    Jena Malone and Jeffrey Wright. It was the highest-grossing domestic box office release of 2013 and the 10th highest-grossing domestic release of all time.
+                    Lionsgate released THE HUNGER GAMES: MOCKINGJAY – PART 1 on November 21, 2014 and THE HUNGER GAMES: MOCKINGJAY – PART 2 on November 20, 2015,
+                    also directed by Lawrence and welcoming Julianne Moore, Mahershala Ali, Natalie Dormer, and Patina Miller to the cast. Both screenplays were by Peter Craig and
+                    Danny Strong from an adaptation by Suzanne Collins. All four films were produced by Nina Jacobson of Color Force and Jon Kilik.
+                    The worldwide box for the entire franchise was nearly 3 billion.
+                </p>
+                <h3>Other works</h3>
+                <hr>
+                <p>
+                    In September 2013, Suzanne released a critically acclaimed autobiographical picture book, YEAR OF THE JUNGLE, illustrated by James Proimos.
+                    It deals with the year she was six and her father was deployed to Viet Nam. It has been sold into 12 territories in 11 languages.
+                    Her first picture book, WHEN CHARLIE MCBUTTON LOST POWER, about a boy obsessed with computer games, was illustrated by Mike Lester and came out in 2005.
+                    It has been sold into 4 foreign territories.
+                </p>
+                <h3>Recognition</h3>
+                <hr>
+                <p>
+                    Her books have sold over 100 million copies worldwide.
+                </p>
+            </div>
+        </section>
+    </article>
 
 </main>
 

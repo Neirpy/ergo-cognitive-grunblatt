@@ -86,13 +86,14 @@ function prevSlide() {
     showSlide();
 }
 
+if (document.querySelector('.next') && document.querySelector('.prev')){
+    document.querySelector('.next').addEventListener('click', nextSlide);
+    document.querySelector('.prev').addEventListener('click', prevSlide);
+    generateSlideCounter();
+    showSlide();
+}
 
 
-document.querySelector('.next').addEventListener('click', nextSlide);
-document.querySelector('.prev').addEventListener('click', prevSlide);
-
-generateSlideCounter();
-showSlide();
 
 /**
  * partie menu burger

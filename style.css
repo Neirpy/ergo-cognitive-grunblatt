@@ -24,12 +24,24 @@ body{
 header{
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  padding: 2%;
-  width: 97%;
+  justify-content: space-between;
+  padding: 1%;
+  width: 99%;
   background-color: var(--black-color);
   position: fixed;
   top: 0;
+}
+
+header div:first-of-type{
+  display: flex;
+  align-items: center;
+  flex-basis: 30%;
+}
+
+header div img{
+  width: 15%;
+  height: auto;
+  margin-right: 2%;
 }
 
 header h1 a {
@@ -41,14 +53,17 @@ h1{
   font-size: 2vmax;
 }
 
+h2{
+  font-size: 1.5vmax;
+}
+
 header nav {
-  width: 70%;
   font-size: 1.2vmax;
 }
 
 header nav ul {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   list-style: none;
   padding: 0;
 }
@@ -62,8 +77,17 @@ header nav ul li a:hover {
   color: var(--secondary-color);
 }
 
+header nav ul li {
+  flex-grow: 1;
+}
+
+#selectedWorksNav {
+  flex-grow: 1;
+  width: 20%;
+}
+
 #selectedWorks{
-  width: 50%;
+  width: 80%;
   color: var(--white-color);
   background-color: var(--black-color);
   font-size: 1.2vmax;
@@ -103,7 +127,8 @@ header nav ul li a:hover {
 
 main{
   background: var(--gradient-color);
-  padding-top: 20vh;
+  padding-top: 10vh;
+  font-size: 1.1vmax;
 }
 
 main hr{
@@ -119,6 +144,10 @@ a{
 a:hover{
   color: var(--main-color);
   transition: color 0.5s;
+}
+
+article{
+  padding: 2%;
 }
 
 #home section {
@@ -161,7 +190,6 @@ section hr {
 
 .famousPart, .review{
   color: var(--black-color);
-  padding: 2%;
 }
 
 
@@ -182,7 +210,7 @@ section hr {
 }
 
 .famousPart img {
-  width: 40%;
+  width: 50%;
   height: auto;
   margin-left: auto;
   margin-right: auto;
@@ -324,6 +352,56 @@ sub{
   transition: color 0.5s;
 }
 
+#bio section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#interview section{
+  display: grid;
+  grid-template-columns: 30% 1fr;
+}
+
+.text{
+  background-color: var(--lightgray-color);
+  padding-left: 2%;
+  margin-left: 1%;
+  padding-right: 2%;
+  border-radius: 10px;
+}
+
+#interview section div:first-of-type{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2%;
+}
+
+#bio section p, #interview section p{
+  margin-block-start: 0.5em;
+}
+
+#bio section div, #interview section div{
+  padding-left: 2%;
+}
+
+#bio img{
+  max-width: 25%;
+  margin-bottom: 2%;
+  height: auto;
+  border-radius: 10px;
+  border: 5px solid var(--white-color);
+}
+
+#interview img{
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 5px solid var(--white-color);
+}
+
 footer{
   padding: 10px;
   text-align: center;
@@ -391,7 +469,19 @@ footer ul li a:hover {
     width:100vw;
   }
   header {
+    width: 97%;
+    padding: 2%;
     justify-content: space-between;
+  }
+
+  header div:first-of-type{
+    flex-basis: 50%;
+  }
+
+  header div img{
+    width: 25%;
+    height: auto;
+    margin-right: 2%;
   }
 
   header nav {
@@ -399,9 +489,10 @@ footer ul li a:hover {
     z-index: 10;
     right: 0;
     height: 100vh;
+    padding-top: 10%;
     font-size: 2vmax;
     top: 100%;
-    background-color: var(--main-color);
+    background-color: var(--black-color);
     display: flex;
     flex-direction: row;
     align-items: flex-end;
@@ -422,14 +513,29 @@ footer ul li a:hover {
     opacity: 0;
   }
 
-  header nav ul li:last-of-type label{
+  #selectedWorksNav{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #selectedWorks{
+    width: 100%;
+    font-size: 2vmax;
+  }
+
+  #selectedWorks option, #selectedWorks optgroup{
+    font-size: 1.5vmax;
+  }
+
+  #selectedWorks label{
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
   main{
-    padding-top: 5vh;
+    padding-top: 7vh;
   }
 
   section{
@@ -440,13 +546,22 @@ footer ul li a:hover {
     flex-direction: column;
   }
 
-  #selectedWorks{
-    font-size: 2vmax;
-    background-color: var(--main-color);
+  #bio section{
+    flex-direction: column;
+    align-items: center;
   }
 
-  #selectedWorks option, #selectedWorks optgroup{
-    font-size: 1.5vmax;
+  #bio img{
+    max-width: 50%;
+  }
+
+  #interview section{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .illuFamous{
+    flex-direction: column;
   }
 
   .slide{

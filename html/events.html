@@ -4,25 +4,208 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Suzanne Collins - Biography</title>
+    <title>Suzanne Collins - Interview</title>
     <link rel="stylesheet" href="../style.css">
     <script type="module" src="../main.js"></script>
 </head>
 <body>
-<header id="header">
-    <h1>Suzanne Collins</h1>
+<header>
+    <div>
+        <img src="../logo-hunger-games.png" alt="Logo hunger games header">
+        <h1><a href="../index.html">Suzanne Collins</a></h1>
+    </div>
+    <div class="burger">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
     <nav>
         <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="works.html">Works</a></li>
-            <li><a href="bio.html">Biography</a></li>
-            <li class="active"><a class="active" href="events.html">Interview</a></li>
+            <li class="active"><a href="../index.html">Home</a></li>
+            <li id="selectedWorksNav">
+                <label>
+                    <select
+                            onchange="window.location=this.value"
+                            id="selectedWorks"
+                    >
+                        <option value="/html/works.html" id="firtSelectNav" hidden>My books</option>
+                        <optgroup label="PICTURE BOOK">
+                            <option value="/html/year_of_the_jungle.html">Year of the Jungle</option>
+                            <option value="/html/when_charlie_mcbutton.html">WHEN CHARLIE MCBUTTON LOST POWER</option>
+                        </optgroup>
+                        <optgroup label="SCI-FI">
+                            <option value="/html/mockingjay.html">Mockingjay</option>
+                            <option value="/html/catching_fire.html">Catching Fire</option>
+                            <option value="/html/the_hunger_games.html">The Hunger Games</option>
+                        </optgroup>
+                        <optgroup label="FANTASY">
+                            <option value="/html/gregor_the_overlander.html">Gregor the Overlander</option>
+                            <option value="/html/gregor_and_the_prophecy_of_bane.html">Gregor and the Prophecy of Bane</option>
+                            <option value="/html/gregor_and_the_curse_of_the_warmbloods.html">Gregor and the Curse of the Warmbloods</option>
+                            <option value="/html/gregor_and_the_marks_of_secret.html">Gregor and the Marks of Secret</option>
+                            <option value="/html/gregor_and_the_code_of_claw.html">Gregor and the Code of Claw</option>
+                        </optgroup>
+                        <optgroup label="ALL">
+                            <option value="/html/works.html">View all</option>
+                        </optgroup>
+                    </select>
+                </label>
+            </li>
+            <li><a href="/html/bio.html">Biography</a></li>
+            <li><a class="active" href="/html/events.html">Interview</a></li>
         </ul>
     </nav>
 </header>
 
 <main>
-    <h2>Interview</h2>
+    <article id="interview">
+        <h2>Interview</h2>
+        <hr>
+        <section>
+            <div>
+                <img src="../img/Rat_and_me.jpg" alt="Suzanne with the rat">
+                <sub>Okay, the rat is fake. Read below to see why...</sub>
+            </div>
+            <div class="text">
+                <p>
+                    Here is an interview that I did with Jen Rees at Scholastic Press:
+                </p>
+<!--                <details>-->
+<!--                    <summary>1. Of all the places Gregor could have traveled to, why the Underland?</summary>-->
+<!--                    <p>-->
+<!--                        I liked the fact that this world was teeming under New York City and nobody was aware of it.-->
+<!--                        That you could be going along preoccupied with your own problems and then whoosh!-->
+<!--                        You take a wrong turn in your laundry room and suddenly a giant cockroach is right in your face.-->
+<!--                        No magic, no space or time travel,-->
+<!--                        there's just a ticket to another world behind your clothes dryer.-->
+<!--                    </p>-->
+<!--                </details>-->
+<!--                <details>-->
+<!--                    <summary>2. Is there anything you find/found difficult or challenging in writing from the perspective of an 11-year-old boy?</summary>-->
+<!--                    <p>-->
+<!--                        I remember being eleven very clearly and I had a lot of friends who were boys-->
+<!--                        so it felt pretty natural being in Gregor's head.-->
+<!--                    </p>-->
+<!--                </details>-->
+                <h3>1. Of all the places Gregor could have traveled to, why the Underland?</h3>
+                <p>
+                    I liked the fact that this world was teeming under New York City and nobody was aware of it.
+                    That you could be going along preoccupied with your own problems and then whoosh!
+                    You take a wrong turn in your laundry room and suddenly a giant cockroach is right in your face.
+                    No magic, no space or time travel,
+                    there's just a ticket to another world behind your clothes dryer.
+                </p>
+                <h3>2. Is there anything you find/found difficult or challenging in writing from the perspective of an 11-year-old boy?</h3>
+                <p>
+                    I remember being eleven very clearly and I had a lot of friends who were boys
+                    so it felt pretty natural being in Gregor's head.
+                </p>
+                <h3>3. Are you anything like Gregor?</h3>
+                <p>
+                    I think I'm like Gregor because we both want to do the right thing but sometimes have trouble
+                    figuring out what it is.
+                    Also, neither of us likes to ride roller coasters and we've both changed a lot of diapers.
+                </p>
+                <p>
+                    But Gregor is much braver than I am…if
+                    I even see a regular sized rat in New York City I immediately cross the street.
+                </p>
+                <h3>4. What kinds of things did you enjoy doing when you were 11?</h3>
+                <p>
+                    Gymnastics, like Luxa. Reading. Running around in the woods with my friends.
+                </p>
+                <h3>5. Many people think bats, rats, cockroaches, and spiders are creepy! Did you have to get over your fear of any (or all!) of them to write this story?</h3>
+                <p>
+                    I wish I could say that after I researched the creepy animals I was no longer at all afraid of them…
+                    but that would be a big fib! Cockroaches aren't really scary, just a little germy,
+                    so I don't mind them much. I love bats…except these really loud ones that get in my attic in the summer
+                    and hold some kind of party all night long. Spiders still scare me some, although
+                    I'm also fascinated by them and I can happily watch them from a distance.
+                    But rats…not pet rats but the wild kind…
+                    I will always have what I consider to be a healthy fear of rats. You should, too.
+                </p>
+                <h3>6. Are you kinder to cockroaches, bats, rats, and/or spiders nowadays?</h3>
+                <p>
+                    I don't think I was ever particularly unkind to them…but
+                    I do have more of a connection with them now. I'm more aware of their similarities to humans.
+                    And I'm sympathetic to their desire to survive, which all creatures share.
+                </p>
+                <h3>7. Did you have a sibling who, like Boots, got you into a world of trouble?</h3>
+                <p>
+                    I have two older sisters and one older brother and hold them largely responsible for the trouble I got into growing up.
+                    I believe as the youngest child, that is my right.
+                </p>
+                <h3>8. Have you ever lived in New York City?</h3>
+                <p>
+                    I lived in New York City for 16 years, from 1987 to 2003.
+                    But when I was growing up we moved all the time because my dad was in the Air Force.
+                    We were mostly on the eastern half of the U.S. and in Europe but, like Gregor,
+                    I definitely know what it feels like to be a stranger somewhere.
+                </p>
+                <h3>9. If you had to go to the Underland, what items would you take along with you? And who would you take with you?</h3>
+                <p>
+                    I'd take all the flashlights and batteries I could find.
+                    I'd also take a couple of bottles of water and chocolate, because
+                    I don't like traveling without either of these things.
+                    I would wear very comfortable clothes and sneakers…in case I had to run.
+                </p>
+                <p>
+                    My husband, Cap, would be great to have in the Underland, since he is very good in an emergency,
+                    but I'd want him to be with our kids up in the Overland so I'd know they were in safe hands.
+                </p>
+                <p>
+                    (Note: Cap says he would not take me to the Underland because I am not good in an emergency and
+                    I would constantly make him stop and ask for directions. Both of these things are true.)
+                </p>
+                <p>
+                    So I think I would take my good friend Christopher Santos with me,
+                    because he is very diplomatic and travels a lot and he seems at ease in foreign places.
+                    Also, he would never make loud,
+                    mean remarks about the creatures which could get a person in all kinds of trouble.
+                </p>
+                <p>
+                    In the Underland, I would make it my first order of business to hook up with a couple of bats because,
+                    let's face it, without a bat you're probably going to end up as someone's lunch.
+                </p>
+                <h3>10. Have you ever been lost and wanted to find your way home?</h3>
+                <p>
+                    All the time. I have a terrible sense of direction.
+                    I get lost practically every time I leave my house.
+                    Fortunately, people are usually very kind about giving you directions if you ask politely.
+                </p>
+                <h3>11. Do you think you were destined to be a writer? (or is there some free will involved?!)</h3>
+                <p>
+                    I…have no idea how to answer this. I would have to go to a cave and meditate on it or something,
+                    and then I probably still wouldn't know.
+                </p>
+                <h3>12. If you could invite one of the characters to have dinner with your family, who would it be? What might you cook for them?! What questions would you ask them?</h3>
+                <p>
+                    I would invite Ripred to dinner because I think he would tell the most interesting stories.
+                    We would have to serve shrimp in cream sauce because this is his favorite dish of all.
+                    Just to irritate him, I would tell him he has to use a napkin—or he won't get dessert.
+                    He would use the napkin, because dessert would be a fabulous chocolate cake and he loves food,
+                    but I bet he would glare at me the whole time.
+                </p>
+                <p>
+                    I would ask all kinds of questions about being a rat, and living alone in the Dead Land, and about his family.
+                    Ripred sometimes sneaks up to the Overland, so I would ask him his opinion of New York City, too.
+                    After dinner, we'd play Scrabble.
+                </p>
+                <h3>13. All fun aside for a moment, Gregor is also about war and battling forces and survival. Can you tell us a little bit about this?"</h3>
+                <p>
+                    Gregor falls into a fantastical world, but he's really acting out the main role in a war story.
+                    Almost as soon as he arrives in the Underland, he's recognized as the "warrior" of the prophecies
+                    and he's called upon to undertake what are essentially a series of military missions.
+                    For instance, in Book I he goes into enemy territory to rescue a prisoner of war who also happens to be his dad.
+                    It's never described as such, but that's what's really happening.
+                </p>
+                <p>
+                    As the series continues, Gregor is faced with increasingly difficult quests and choices as the Underland breaks into a massive global war.
+                    His struggle to survive-both physically and spiritually-forms the arc of The Underland Chronicles.
+                </p>
+            </div>
+        </section>
+    </article>
 
 </main>
 

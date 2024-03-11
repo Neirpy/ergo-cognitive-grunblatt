@@ -10,7 +10,10 @@
   </head>
   <body>
     <header>
-      <h1><a href="index.html">Suzanne Collins</a></h1>
+      <div>
+        <img src="./logo-hunger-games.png" alt="Logo hunger games header">
+        <h1><a href="index.html">Suzanne Collins</a></h1>
+      </div>
       <div class="burger">
         <div></div>
         <div></div>
@@ -19,16 +22,13 @@
       <nav>
         <ul>
           <li class="active"><a class="active" href="./index.html">Home</a></li>
-          <li><a href="./html/works.html">Works</a></li>
-          <li><a href="./html/bio.html">Biography</a></li>
-          <li><a href="./html/events.html">Interview</a></li>
-          <li>
+          <li id="selectedWorksNav">
             <label>
               <select
-                onchange="window.location=this.value"
-                id="selectedWorks"
+                      onchange="window.location=this.value"
+                      id="selectedWorks"
               >
-                <option value="index.html" id="firtSelectNav">My books</option>
+                <option value="index.html" id="firtSelectNav" hidden>My books</option>
                 <optgroup label="PICTURE BOOK">
                   <option value="html/year_of_the_jungle.html">Year of the Jungle</option>
                   <option value="html/when_charlie_mcbutton.html">WHEN CHARLIE MCBUTTON LOST POWER</option>
@@ -45,9 +45,14 @@
                   <option value="html/gregor_and_the_marks_of_secret.html">Gregor and the Marks of Secret</option>
                   <option value="html/gregor_and_the_code_of_claw.html">Gregor and the Code of Claw</option>
                 </optgroup>
+                <optgroup label="ALL">
+                  <option value="html/works.html">View all</option>
+                </optgroup>
               </select>
             </label>
           </li>
+          <li><a href="./html/bio.html">Biography</a></li>
+          <li><a href="./html/events.html">Interview</a></li>
         </ul>
       </nav>
     </header>
