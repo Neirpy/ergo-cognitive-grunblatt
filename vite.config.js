@@ -16,7 +16,7 @@ export default defineConfig({
         main: resolve(__dirname, 'index.html'),
         bio: resolve(__dirname, 'html/bio.html'),
         works: resolve(__dirname, 'html/works.html'),
-        events: resolve(__dirname, 'html/events.html')
+        events: resolve(__dirname, 'html/events.html'),
         catching_fire: resolve(__dirname, 'html/catching_fire.html'),
         gregor_and_the_marks_of_secret: resolve(__dirname, 'html/gregor_and_the_marks_of_secret.html'),
         gregor_and_the_prophecy_of_bane: resolve(__dirname, 'html/gregor_and_the_prophecy_of_bane.html'),
@@ -24,7 +24,7 @@ export default defineConfig({
         gregor_and_the_code_of_claw: resolve(__dirname, 'html/gregor_and_the_code_of_claw.html'),
         the_hunger_games: resolve(__dirname, 'html/the_hunger_games.html'),
         when_charlie_charlie_mcbutton: resolve(__dirname, 'html/when_charlie_mcbutton.html'),
-        year_of_the_jungle: resolve(__dirname, 'html/year_of_the_jungle.html'),
+        year_of_the_jungle: resolve(__dirname, 'html/year_of_the_jungle.html')
       }
     }
   },
