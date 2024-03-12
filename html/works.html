@@ -21,14 +21,15 @@
     </div>
     <nav>
         <ul>
-            <li class="active"><a class="active" href="../index.html">Home</a></li>
-            <li id="selectedWorksNav">
+            <li><a href="../index.html">Home</a></li>
+            <li class="active" id="selectedWorksNav">
                 <label>
                     <select
                             onchange="window.location=this.value"
                             id="selectedWorks"
+                            class="active"
                     >
-                        <option value="/html/works.html" id="firtSelectNav" hidden>My books</option>
+                        <option class="active" value="/html/works.html" id="firtSelectNav" hidden>My books</option>
                         <optgroup label="PICTURE BOOK">
                             <option value="/html/year_of_the_jungle.html">Year of the Jungle</option>
                             <option value="/html/when_charlie_mcbutton.html">WHEN CHARLIE MCBUTTON LOST POWER</option>
@@ -58,8 +59,87 @@
 </header>
 
 <main>
-    <h2>My books</h2>
-
+    <article id="books">
+        <h2>My books :</h2>
+        <section>
+            <h3>Picture book :</h3>
+            <hr>
+            <ul>
+                <li>
+                    <a href="/html/year_of_the_jungle.html">
+                        <img src="../img/YOTJ_Cover.jpg" alt="cover of Year of the Jungle">
+                        <div>Year of the Jungle</div>
+                    </a>
+                </li>
+                <li>
+                    <a id="charlie" href="/html/when_charlie_mcbutton.html">
+                        <img src="../img/Book_cover--cmc.jpg" alt="cover of When Charlie McButton Lost Power">
+                        <div>WHEN CHARLIE MCBUTTON LOST POWER</div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h3>Sci-fi :</h3>
+            <hr>
+            <ul>
+                <li>
+                    <a href="/html/mockingjay.html">
+                        <img src="../img/Mockingjaycover.jpg" alt="cover of Mockingjay">
+                        <div>Mockingjay</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="/html/catching_fire.html">
+                        <img src="../img/Catching_fire_c.jpg" alt="cover of Catching Fire">
+                        <div>Catching Fire</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="/html/the_hunger_games.html">
+                        <img src="../img/Hg--jacket.jpg" alt="cover of The Hunger Games">
+                        <div>The Hunger Games</div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h3>Fantasy :</h3>
+            <hr>
+            <ul>
+                <li>
+                    <a href="/html/gregor_the_overlander.html">
+                        <img src="../img/Gregor_1_Cover.png" alt="cover of Gregor the Overlander">
+                        <div>Gregor the Overlander</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="/html/gregor_and_the_prophecy_of_bane.html">
+                        <img src="../img/Gregor_2_Cover.png" alt="cover of Gregor and the Prophecy of Bane">
+                        <div>Gregor and the Prophecy of Bane</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="/html/gregor_and_the_curse_of_the_warmbloods.html">
+                        <img src="../img/Gregor_3_Cover.png" alt="cover of Gregor and the Curse of the Warmbloods">
+                        <div>Gregor and the Curse of the Warmbloods</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="/html/gregor_and_the_marks_of_secret.html">
+                        <img src="../img/Gregor_4_Cover.png" alt="cover of Gregor and the Marks of Secret">
+                        <div>Gregor and the Marks of Secret</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="/html/gregor_and_the_code_of_claw.html">
+                        <img src="../img/Gregor_5_Cover.png" alt="cover of Gregor and the Code of Claw">
+                        <div>Gregor and the Code of Claw</div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </article>
 </main>
 
 <footer>

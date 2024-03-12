@@ -81,6 +81,16 @@ header nav ul li {
   flex-grow: 1;
 }
 
+.active {
+  color: var(--secondary-color);
+}
+
+.active:hover {
+  color: var(--white-color);
+  border-color: var(--secondary-color);
+  transition: 0.5s color, 0.5s background-color, 0.5s border;
+}
+
 #selectedWorksNav {
   flex-grow: 1;
   width: 20%;
@@ -93,6 +103,11 @@ header nav ul li {
   font-size: 1.2vmax;
   margin: 0;
   border: none;
+  transition: 0.5s color;
+}
+
+#selectedWorks.active{
+  color: var(--secondary-color);
   transition: 0.5s color;
 }
 
@@ -113,16 +128,6 @@ header nav ul li {
 
 #selectedWorks:focus{
   outline: none;
-}
-
-.active {
- color: var(--secondary-color);
-}
-
-.active:hover {
-  color: var(--white-color);
-  border-color: var(--secondary-color);
-  transition: 0.5s color, 0.5s background-color, 0.5s border;
 }
 
 main{
@@ -275,7 +280,6 @@ sub{
   margin-right: auto;
 }
 
-
 .slideSelectList {
   height: 100%;
   border: var(--main-color) 2px solid;
@@ -400,6 +404,58 @@ sub{
   height: auto;
   border-radius: 10px;
   border: 5px solid var(--white-color);
+}
+
+#books section ul li img{
+  width: 200px;
+  height: 300px;
+}
+
+#books section ul{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-inline-start: 0;
+  list-style: none;
+}
+
+#books section ul:last-of-type{
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  flex: 1;
+}
+
+#books section ul li{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2%;
+  margin: 1%;
+  border-radius: 10px;
+  background-color: var(--lightgray-color);
+}
+
+#books section ul li:hover{
+  background-color: var(--main-color);
+  transition: 0.5s background-color;
+}
+
+#books section ul li a{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--black-color);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+#books section ul li a:hover{
+  color: var(--white-color);
+  transition: color 0.5s;
 }
 
 footer{
@@ -535,7 +591,7 @@ footer ul li a:hover {
   }
 
   main{
-    padding-top: 7vh;
+    padding-top: 8vh;
   }
 
   section{
@@ -557,6 +613,10 @@ footer ul li a:hover {
 
   #interview section{
     display: flex;
+    flex-direction: column;
+  }
+
+  #books section ul{
     flex-direction: column;
   }
 
