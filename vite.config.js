@@ -20,7 +20,7 @@ export default defineConfig({
         catching_fire: resolve(__dirname, 'html/catching_fire.html'),
         mockingjay: resolve(__dirname, 'html/mockingjay.html'),
         gregor_and_the_marks_of_secret: resolve(__dirname, 'html/gregor_and_the_marks_of_secret.html'),
-        gregor_and_the_overlander: resolve(__dirname, 'html/gregor_and_the_overlander.html'),
+        gregor_the_overlander: resolve(__dirname, 'html/gregor_the_overlander.html'),
         gregor_and_the_prophecy_of_bane: resolve(__dirname, 'html/gregor_and_the_prophecy_of_bane.html'),
         gregor_and_the_curse_of_the_warmbloods: resolve(__dirname, 'html/gregor_and_the_curse_of_the_warmbloods.html'),
         gregor_and_the_code_of_claw: resolve(__dirname, 'html/gregor_and_the_code_of_claw.html'),
