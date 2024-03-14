@@ -453,7 +453,7 @@ sub{
 }
 
 .bookPage section section:first-of-type div:last-of-type img{
-  width: auto;
+  max-width: 400px;
   height: auto;
 }
 
@@ -468,6 +468,7 @@ sub{
 }
 
 .price img:first-of-type{
+  width: 400px;
   height: auto;
   margin-right: 2%;
   border-radius: 10px;
@@ -760,6 +761,11 @@ footer ul li a:hover {
 
   .bookPage section section:first-of-type div:last-of-type{
     flex-direction: column;
+  }
+
+  .bookPage section section:first-of-type div:last-of-type img, .price img:first-of-type{
+    max-width: 50vw;
+    height: auto;
   }
 
   .burger {
