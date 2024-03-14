@@ -262,8 +262,10 @@ sub{
   color: var(--white-color);
 }
 
+
 .sliderBook{
   width: 100%;
+  height: 65vh;
   display: flex;
   justify-content: space-between;
   border-radius: 10px;
@@ -272,22 +274,21 @@ sub{
 
 .slidePartBook {
   width: 100%;
-  height: 40vh;
+  height: 50vh;
   display: flex;
   justify-content: center;
   overflow: hidden;
   align-items: center;
   border-radius: 10px;
+  border: 3px solid var(--black-color);
 }
 
 .slideBook {
-  width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 2%;
   justify-content: center;
-  border: 3px solid var(--black-color);
 }
 
 .activeSlide {
@@ -299,9 +300,8 @@ sub{
 
 .activeSlideBook {
   display: flex;
-  height: 100%;
   width: 90%;
-  padding: 2%;
+  height: 100%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
